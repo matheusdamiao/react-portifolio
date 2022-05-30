@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.scss'
+import { Routes, Route, Link } from 'react-router-dom';
 
 
 
@@ -7,11 +8,12 @@ import './style.scss'
 const Menu = () => {
   return (
     <div>
+      
         <nav className='nav'>
-            <a href='/'> home</a> 
-            <a href=''> projetos</a> 
-            <a href=''> sobre </a> 
-            <a href=''> contato </a> 
+            <Link to="/"> home </Link>
+            <Link to="/projetos"> projetos </Link>
+            <Link to="/sobre"> sobre </Link>
+            <Link to="/contato"> contato </Link> 
 
         </nav>
       

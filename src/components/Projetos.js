@@ -23,6 +23,9 @@ const Projetos = () => {
   return (
     <div className='projetos'>
       
+        
+
+
         {project.map( (project, index)=> {
           return <Projeto titulo={project.titulo} techs={project.techs} descricao={project.descricao} imagem={project.imagem} key={index}/>
           })

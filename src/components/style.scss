@@ -4,9 +4,14 @@
 
 $advent-pro: 'Advent Pro', sans-serif;
 $text-me-one: 'Text Me One', sans-serif;
-
-
 $primary-color: black;
+
+
+* {
+    color: #4F4F4F;
+    text-decoration: none;
+}
+
 
 .nav {
     
@@ -80,13 +85,14 @@ $primary-color: black;
 
 .btns-header {
     display: flex;
-    width: 500px;
+    width: 600px;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
 
     .social-links {
       margin-right: 5px;
+      
     }
 
     img {
@@ -103,17 +109,14 @@ $primary-color: black;
         border-radius: 25px;
         border: none;
         padding: 15px 25px;
-        font-size: 15px;
+        font-size: 20px;
         cursor: pointer;
+        width: 180px;
     }
 
 
 
 }
-
-
-
-
 
 
 
@@ -125,4 +128,87 @@ $primary-color: black;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+
+
+
+
+.sobre {
+    margin: 0 auto;
+    width: 700px;
+    font-family: $advent-pro;
+
+    h1 {
+        margin-top: 200px;
+        margin-bottom: 100px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    p{
+        font-size: 20px;
+        font-family: 'Ralleway';
+        line-height: 35px;
+    }
+}
+
+
+
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    input {
+        padding: 10px 10px;
+        width: 400px;
+        margin: 5px;
+    }
+    textarea {
+        padding: 10px 10px;
+        max-width: 600px;
+        min-width: 400px;
+        min-height: 150px;
+        margin: 5px;
+        margin-bottom: 50px;
+    }
+
+    
+}
+
+.btn-form {
+        display: block;
+        margin: 0 auto;
+        background: rgba(68, 255, 143, 0.5);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        border: none;
+        padding: 15px 40px;
+        font-size: 18px;
+        cursor: pointer;
+        width: 150px;
+        margin-bottom: 50px;
+       
+   
+}
+
+.header-form {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    h1 {
+        font-size: 3em;
+        line-height: 10px;
+    }
+    p {
+        margin: auto;
+        font-size: 1.2em;
+        max-width: 500px;
+    }
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link, Outlet } from 'react-router-dom'
 import Header from './Header'
 import Projetos from './Projetos'
 import Sobre from './Sobre'
@@ -13,6 +13,7 @@ const Main = () => {
      <Projetos />
      <Sobre />
      <Contato />
+     
       </>
   )
 }

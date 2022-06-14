@@ -1,6 +1,6 @@
 import React, { useState} from 'react'
 import { Routes, Route, Link, Outlet, useParams } from 'react-router-dom'
-import CardProjeto from './CardProjeto'
+import Projetos from './Projetos'
 
 const ProjetoCompleto = () => {
    
@@ -9,6 +9,7 @@ const ProjetoCompleto = () => {
   return (
     <>
        <p> Testando {id} </p>
+       
     </>
   )
 }

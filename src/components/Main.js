@@ -4,6 +4,7 @@ import Header from './Header'
 import Projetos from './Projetos'
 import Sobre from './Sobre'
 import Contato from './Contato'
+import Footer from './Footer'
 
 
 const Main = () => {
@@ -13,8 +14,8 @@ const Main = () => {
      <Projetos />
      <Sobre />
      <Contato />
-     
-      </>
+     <Footer />
+    </>
   )
 }
 

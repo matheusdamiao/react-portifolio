@@ -25,6 +25,8 @@ const Contato = () => {
      console.log(e.message)
    }
   }
+
+  
   setData(inputs)
   setInputs({})
   }

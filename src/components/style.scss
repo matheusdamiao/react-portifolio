@@ -10,20 +10,28 @@ $primary-color: black;
 * {
     color: #4F4F4F;
     text-decoration: none;
+    
 }
 
+
+body {
+    overflow-x: hidden;
+}
 
 .nav {
     
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 600px;
+    width: 3000px;
+    max-width: 100%;
     margin: 0 auto;
     margin-top: 80px;
     list-style: none;
     font-family: $advent-pro;
     font-size: 20px;
+
+  
 
     a{ 
         text-decoration: none;
@@ -31,9 +39,45 @@ $primary-color: black;
         font-style: normal;
         font-weight: 400;
     }
+
+
+   
+    .bars {
+        display: none;
+        width: 20px;
+        position: absolute;
+        right: 40px;
+        top: 80px;
+        
+
+        @media screen and (max-width: 768px) {
+            display: block;
+            cursor: pointer;
+        }
+
+    }
+
+
+    
+        
+    
 }
 
 
+.links{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    
+    @media screen and (max-width: 768px) {
+        display: none;
+       }
+
+   }
+    
+   
 
 
 .header {
@@ -117,6 +161,11 @@ $primary-color: black;
 
 
 }
+
+
+
+
+
 
 
 

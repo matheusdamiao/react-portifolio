@@ -25,7 +25,7 @@ const Sobre = () => {
       
       <div style={{width: '500px'}}>
 
-      <img src={foto} style={{margin: '0 auto', display: 'block', width:'200px', marginBottom:'50px'}}/>
+      <img src={foto} style={{margin: '0 auto', display: 'block', width:'200px', marginBottom:'50px'}} alt="avatar"/>
 
       <p>
       Me chamo <span style={{fontWeight: '900'}}>Matheus Oliveira Damião </span>, nasci em Florianópolis, mas sou carioca por convivência. Vivo no Rio de Janeiro desde 2011 quando me mudei para estudar Letras na UFRJ. 
@@ -39,20 +39,20 @@ const Sobre = () => {
       <div style={{width: '350px'}}>
         <h2 style={{textAlign: 'center', fontSize:'35px', marginBottom: '130px', marginTop: '60px'}}> Skills <img src={Code}/> </h2>
         <div style={{width: '100%', display: 'flex', alignContent: 'center', justifyContent: 'center', flexWrap: 'wrap'}}>
-          <img width="60px" src={um} style={{padding: '20px'}}/>
-          <img width="70px" src={dois} style={{padding: '20px'}}/>
-          <img width="80px" src={tres} style={{padding: '20px'}}/>
-          <img width="60px" src={quatro} style={{padding: '20px'}}/>
-          <img width="60px" src={cinco} style={{padding: '20px'}}/>
-          <img width="60px" src={seis} style={{padding: '20px'}}/>
-          <img width="60px" src={sete} style={{padding: '20px'}}/>
-          <img width="60px" src={oito} style={{padding: '20px'}}/>
-          <img width="60px" src={nove} style={{padding: '20px'}}/>
+          <img width="60px" src={um} style={{padding: '20px'}} alt="icon"/>
+          <img width="70px" src={dois} style={{padding: '20px'}} alt="icon"/>
+          <img width="80px" src={tres} style={{padding: '20px'}} alt="icon"/>
+          <img width="60px" src={quatro} style={{padding: '20px'}} alt="icon"/>
+          <img width="60px" src={cinco} style={{padding: '20px'}} alt="icon"/>
+          <img width="60px" src={seis} style={{padding: '20px'}} alt="icon"/>
+          <img width="60px" src={sete} style={{padding: '20px'}} alt="icon"/>
+          <img width="60px" src={oito} style={{padding: '20px'}} alt="icon"/>
+          <img width="60px" src={nove} style={{padding: '20px'}} alt="icon"/>
         </div>
 
         <div style={{marginTop: '50px'}}>
-          <button className='btn' style={{marginBottom: '10px', display: 'flex', alignItems: 'center', justifyContent: 'space-around', width: '200px', height: '50px'}}> Currículo <img src={Doc} style={{width:'20px'}} /></button>
-          <a href='https://github.com/matheusdamiao' target="_blank"> <button className='btn' style={{backgroundColor: 'rgba(134, 134, 134, 0.5)', width: '200px', display: 'flex', alignItems: 'center', justifyContent: 'space-around', height: '50px'}}> Github  <img src={Github} style={{width:'35px'}} /> </button> </a>
+          <button className='btn' style={{marginBottom: '10px', display: 'flex', alignItems: 'center', justifyContent: 'space-around', width: '200px', height: '50px'}}> Currículo <img src={Doc} style={{width:'20px'}} alt="doc" /></button>
+          <a href='https://github.com/matheusdamiao' target="_blank" rel="noreferrer"> <button className='btn' style={{backgroundColor: 'rgba(134, 134, 134, 0.5)', width: '200px', display: 'flex', alignItems: 'center', justifyContent: 'space-around', height: '50px'}}> Github  <img src={Github} style={{width:'35px'}} alt="github"/> </button> </a>
         </div>
       </div>
 

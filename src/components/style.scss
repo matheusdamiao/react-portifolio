@@ -59,17 +59,28 @@ body {
     }
 
     .menu-bar-active {
-
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
     }
 
-  
-        
-    
+     
+    .menu-bar-closed {
+       display: none;
 }
 
 
-.menu-bar-closed {
-    display: none;
+    .nav-mobile {
+        @media screen and (min-width: 768px) {
+            display: none;
+            
+            
+        }
+    }
+
+
+        
+    
 }
 
 

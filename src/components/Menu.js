@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.scss'
-import { Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Bars from './assets/bars-solid.svg'
 
 
 
 const Menu = () => {
+  const [menuState, setMenuState] = useState('closed');
+  
+  const toggleMenu = () => {
+    menuState !== 'open' ? (setMenuState('open')) : (setMenuState('closed'))
+         }
+
   return (
     <div>
       
@@ -16,7 +22,15 @@ const Menu = () => {
             <Link to="/sobre"> sobre </Link>
             <Link to="/contato"> contato </Link> 
           </div>
-            <img src={Bars} alt='menu-bars' className='bars'/>
+          <div>
+            <img src={Bars} alt='menu-bars' className='bars' onClick={toggleMenu}/>
+            <div className={`menu-bar-${menuState === 'open'? 'active' : 'closed'}`}>
+              <Link to="/"> home </Link>
+              <Link to="/projetos"> projetos </Link>
+              <Link to="/sobre"> sobre </Link>
+              <Link to="/contato"> contato </Link> 
+            </div>
+          </div>
         </nav>
         
       

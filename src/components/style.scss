@@ -53,15 +53,28 @@ body {
         @media screen and (max-width: 768px) {
             display: block;
             cursor: pointer;
+            
         }
 
     }
 
+    .menu-bar-active {
 
-    
+    }
+
+  
         
     
 }
+
+
+.menu-bar-closed {
+    display: none;
+}
+
+
+
+
 
 
 .links{

@@ -10,7 +10,7 @@ const CardProjeto = ({titulo, techs, descricao, imagem, id, link}) => {
 
 
   return (
-    <div className='cardProjeto' style={{marginTop: '200px', backgroundColor: "#f1f1f0", padding:"100px", borderRadius: '25px'}}>
+    <div className='cardProjeto' style={{marginTop: '200px', backgroundColor: "#f1f1f0", padding:"50px", borderRadius: '25px'}}>
       
       
       <img width='600px' style={{opacity:'0.8'}} src={imagem}/>

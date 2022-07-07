@@ -23,31 +23,31 @@ const Sobre = () => {
     
     <div className='sobre'>
       
-      <div style={{width: '500px'}}>
+      <div style={{marginLeft: '15px', marginRight: '15px', maxWidth: '500px'}}>
 
-      <img src={foto} style={{margin: '0 auto', display: 'block', width:'200px', marginBottom:'50px'}} alt="avatar"/>
+        <img src={foto} style={{margin: '0 auto', display: 'block', width:'200px', marginBottom:'50px'}} alt="avatar"/>
 
-      <p>
-      Me chamo <span style={{fontWeight: '900'}}>Matheus Oliveira Damião </span>, nasci em Florianópolis, mas sou carioca por convivência. Vivo no Rio de Janeiro desde 2011 quando me mudei para estudar Letras na UFRJ. 
-      Professor de idiomas desde então, engressei pro mestrado e depois segui para o doutorado. No entanto, a solitária e pouco valorizada carreira acadêmica que levava, somado ao crescente encolhimento na área de Humanidades, tiveram um grande impacto sobre mim, e lá pelo fim do meu PhD, resolvi, apesar da insegurança inicial, repensar toda minha carreira e embarcar em uma nova trajetória. 
-      Foi quando descobri a área de desenvolvimento web, com suas linguagens e experiências incríveis. Me apaixonei por web design, sobretudo quando encontrei o vasto mundo do UX/UI e cá estou eu, de malas prontas, dando meus primeiros passos nesta nova carreira.
-      O caminho está só no começo, eu sei, mas a sensação é de que já trilho como se fosse um sonho de criança.
-      A tecnologia me cativou com sua constante mudança, com sua calorosa e ativa comunidade e com um mundo de saberes incrivelmente vastos. 
-      </p>
+        <p>
+        Me chamo <span style={{fontWeight: '900'}}>Matheus Oliveira Damião </span>, nasci em Florianópolis, mas sou carioca por convivência. Vivo no Rio de Janeiro desde 2011 quando me mudei para estudar Letras na UFRJ. 
+        Professor de idiomas desde então, engressei pro mestrado e depois segui para o doutorado. No entanto, a solitária e pouco valorizada carreira acadêmica que levava, somado ao crescente encolhimento na área de Humanidades, tiveram um grande impacto sobre mim, e lá pelo fim do meu PhD, resolvi, apesar da insegurança inicial, repensar toda minha carreira e embarcar em uma nova trajetória. 
+        Foi quando descobri a área de desenvolvimento web, com suas linguagens e experiências incríveis. Me apaixonei por web design, sobretudo quando encontrei o vasto mundo do UX/UI e cá estou eu, de malas prontas, dando meus primeiros passos nesta nova carreira.
+        O caminho está só no começo, eu sei, mas a sensação é de que já trilho como se fosse um sonho de criança.
+        A tecnologia me cativou com sua constante mudança, com sua calorosa e ativa comunidade e com um mundo de saberes incrivelmente vastos. 
+        </p>
       </div>
 
       <div style={{width: '350px'}}>
-        <h2 style={{textAlign: 'center', fontSize:'35px', marginBottom: '130px', marginTop: '60px'}}> Skills <img src={Code}/> </h2>
+        <h2 style={{textAlign: 'center', fontSize:'35px', marginBottom: '100px', marginTop: '60px'}}> Skills <img src={Code}/> </h2>
         <div style={{width: '100%', display: 'flex', alignContent: 'center', justifyContent: 'center', flexWrap: 'wrap'}}>
-          <img width="60px" src={um} style={{padding: '20px'}} alt="icon"/>
-          <img width="70px" src={dois} style={{padding: '20px'}} alt="icon"/>
-          <img width="80px" src={tres} style={{padding: '20px'}} alt="icon"/>
-          <img width="60px" src={quatro} style={{padding: '20px'}} alt="icon"/>
-          <img width="60px" src={cinco} style={{padding: '20px'}} alt="icon"/>
-          <img width="60px" src={seis} style={{padding: '20px'}} alt="icon"/>
-          <img width="60px" src={sete} style={{padding: '20px'}} alt="icon"/>
-          <img width="60px" src={oito} style={{padding: '20px'}} alt="icon"/>
-          <img width="60px" src={nove} style={{padding: '20px'}} alt="icon"/>
+          <img src={um} style={{padding: '20px', maxWidth:"90px" }} alt="icon"/>
+          <img  src={dois} style={{padding: '20px', maxWidth: "90px"}} alt="icon"/>
+          <img  src={tres} style={{padding: '20px', maxWidth:"100px"}} alt="icon"/>
+          <img  src={quatro} style={{padding: '20px', maxWidth:"90px"}} alt="icon"/>
+          <img src={cinco} style={{padding: '20px', maxWidth: "90px"}} alt="icon"/>
+          <img src={seis} style={{padding: '20px', maxWidth:"90px"}} alt="icon"/>
+          <img src={sete} style={{padding: '20px', maxWidth: "90px"}} alt="icon"/>
+          <img src={oito} style={{padding: '20px', maxWidth:"90px"}} alt="icon"/>
+          <img src={nove} style={{padding: '20px', maxWidth:"90px"}} alt="icon"/>
         </div>
 
         <div style={{marginTop: '50px'}}>

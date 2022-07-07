@@ -13,12 +13,12 @@ const CardProjeto = ({titulo, techs, descricao, imagem, id, link}) => {
     <div className='cardProjeto' style={{marginTop: '200px', backgroundColor: "#f1f1f0", padding:"50px", borderRadius: '25px'}}>
       
       
-      <img width='600px' style={{opacity:'0.8'}} src={imagem}/>
-      <h2 style={{textAlign:'center', lineHeight: '20px', marginTop:'30px', fontSize: '40px', fontFamily: '$advent-pro', fontWeight: '100'}}> {titulo} </h2>
+      <img max-width='600px' width='100%' style={{opacity:'0.8'}} src={imagem} alt="foto"/>
+      <h2 style={{textAlign:'center', lineHeight: '40px', marginTop:'30px', fontSize: '40px', fontFamily: '$advent-pro', fontWeight: '100'}}> {titulo} </h2>
       <h3 style={{textAlign: 'center', fontFamily:'Ralleway', fontWeight: '600', fontSize: '18px'}}> {techs} </h3>
       <p style={{textAlign: 'center', fontSize: '14px'}} > {descricao}</p>
       <button className='btn'>       
-        <a href={link} target="_blank"> Ver projeto </a>
+        <a href={link} target="_blank" rel="noreferrer"> Ver projeto </a>
       </button>
       
     </div>

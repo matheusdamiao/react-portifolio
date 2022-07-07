@@ -15,23 +15,16 @@ const Menu = () => {
       if(menuState === 'active') {
         setMenuState('closed') 
       } 
-      
       }           
 
-      
     const closeMenu = () => {
       if(window.innerWidth > 800){
         setMenuState('closed')
-      }
-      }
+      }}
     
-
       window.addEventListener('resize', closeMenu)
-
    
-
-  
-  return (
+   return (
     <div>
       
         <nav className='nav'>

@@ -3,16 +3,18 @@ import Github from './assets/github.png'
 import Instagram from './assets/instagram.png'
 import Linkedin from './assets/linkedin.png'
 import Angles from './assets/angles-down.png'
-
+import { Fade } from 'react-awesome-reveal'
 
 const Header = () => {
   return (
     <>
+    <Fade >
     <div className='header'>
       <p> Olá, meu nome é</p>
       <h1 className='name-header'> Matheus Damião </h1>
       <h3> Front-end Developer</h3>
     </div>
+    </Fade>
 
     <div className='btns-header'>
       <button> Diga Olá!</button>

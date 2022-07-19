@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import CardProjeto from './CardProjeto'
 import { Link, Outlet } from 'react-router-dom'
-
+import { Slide } from 'react-awesome-reveal'
 const Projetos = () => {
 
   const [project, setProject] = useState([
@@ -38,6 +38,7 @@ const Projetos = () => {
           {project.map( (project, index)=> {
           return <div>
           
+          <Slide>
           <CardProjeto 
           titulo={project.titulo} 
           techs={project.techs} 
@@ -46,6 +47,7 @@ const Projetos = () => {
           key={index} 
           id={project.id}
           link={project.link} />   
+          </Slide>
         
           </div>
           })

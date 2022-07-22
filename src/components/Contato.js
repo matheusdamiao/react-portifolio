@@ -53,7 +53,7 @@ const Contato = () => {
         <p> Preencha o formulário ou, se preferir, entre em contato comigo por meio de um dos links abaixo </p><br /><br />
       </div>
 
-      <form className='form' onSubmit={handleSubmit}>
+      <form className='form' name='form' onSubmit={handleSubmit} netlify>
         <label> 
           <input type="text" placeholder='Nome' name='nome' value={inputs.nome || ''} onChange={updateInput}/>
         </label>

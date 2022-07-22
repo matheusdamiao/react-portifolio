@@ -56,7 +56,7 @@ const Contato = () => {
       <form className='form' name='form' onSubmit={handleSubmit} netlify>
         <input type="hidden" name="form-name" value="form" />
         <label> 
-          <input type="text" placeholder='Nome' name='nome' value={inputs.nome || ''} onChange={updateInput}/>
+          <input type="text" placeholder='Nome' name='name' value={inputs.nome || ''} onChange={updateInput}/>
         </label>
         <label>
           <input type="email" placeholder='E-mail' name='email' value={inputs.email || ''} onChange={updateInput}/>

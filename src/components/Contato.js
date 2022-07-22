@@ -11,24 +11,24 @@ const Contato = () => {
     e.preventDefault();
     
 
-  const setData = async () => {
-   try {
-     const docRef = await addDoc(collection(db, "form"), {
-       nome: inputs.nome,
-       email: inputs.email,
-       telefone: inputs.telefone,
-       message: inputs.message,
-       time: new Date()
-     });
-     console.log(docRef)
-   } catch (e) {
-     console.log(e.message)
-   }
-  }
+  // const setData = async () => {
+  //  try {
+  //    const docRef = await addDoc(collection(db, "form"), {
+  //      nome: inputs.nome,
+  //      email: inputs.email,
+  //      telefone: inputs.telefone,
+  //      message: inputs.message,
+  //      time: new Date()
+  //    });
+  //    console.log(docRef)
+  //  } catch (e) {
+  //    console.log(e.message)
+  //  }
+  // }
 
   
-  setData(inputs)
-  setInputs({})
+  // setData(inputs)
+  // setInputs({})
   }
 
 
@@ -54,6 +54,7 @@ const Contato = () => {
       </div>
 
       <form className='form' name='form' onSubmit={handleSubmit} netlify>
+        <input type="hidden" name="form-name" value="form" />
         <label> 
           <input type="text" placeholder='Nome' name='nome' value={inputs.nome || ''} onChange={updateInput}/>
         </label>

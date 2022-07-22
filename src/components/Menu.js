@@ -25,7 +25,7 @@ const Menu = () => {
       window.addEventListener('resize', closeMenu)
    
    return (
-    <div>
+    // <div>
       
         <nav className='nav'>
           <div className='links'>
@@ -47,7 +47,7 @@ const Menu = () => {
         </nav>
         
       
-    </div>
+    // </div>
   )
 }
 

@@ -43,7 +43,7 @@ body {
     font-family: $advent-pro;
     font-size: 20px;
     z-index: 9999;
-  
+
 
     a{ 
         text-decoration: none;
@@ -74,8 +74,7 @@ body {
         
         width: 100%;
         height: 400px;
-        
-        max-width: 100%;
+        // max-width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -84,6 +83,7 @@ body {
         position: fixed;
         background-color: white;
         opacity: 0.9;
+        transform: translateY(30%);
         
 
         @media screen and (min-width: 768px) {
@@ -102,7 +102,11 @@ body {
        align-items: center;
        justify-content: center;
        width: 100%;
-       margin-top: 400px;
+       height: 1000px;
+       position: f;
+    //    margin-top: 400px;
+    //    position: fixed;
+       
 
         @media screen and (min-width: 768px) {
             display: none;
@@ -131,6 +135,10 @@ body {
    }
     
    
+
+
+
+
 
 /* Hero section */
 

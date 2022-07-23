@@ -23,10 +23,7 @@ const Contato = () => {
       .then(() => alert("Success!"))
       .catch(error => alert(error));
 
-    setInputs({
-      name: '',
-      value: '',
-    })
+   
     
   };
 

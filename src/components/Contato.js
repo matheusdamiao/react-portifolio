@@ -23,7 +23,7 @@ const Contato = () => {
       .then(() => alert("Success!"))
       .catch(error => alert(error));
 
-   
+      e.preventDefault();
     
   };
 

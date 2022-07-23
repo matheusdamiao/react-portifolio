@@ -6,11 +6,30 @@ const Contato = () => {
 
   const [inputs, setInputs] = useState({})
 
+  const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
 
-  const handleSubmit = (e) =>{
+
+  const handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "form", ...inputs })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
     e.preventDefault();
-    
+  };
 
+
+
+  // const handleSubmit = (e) =>{
+  //   e.preventDefault();
+        
   // const setData = async () => {
   //  try {
   //    const docRef = await addDoc(collection(db, "form"), {
@@ -27,9 +46,9 @@ const Contato = () => {
   // }
 
   
-  // setData(inputs)
-  // setInputs({})
-  }
+  // // setData(inputs)
+  // // setInputs({})
+  // }
 
 
   const updateInput = (e) =>{

@@ -21,7 +21,7 @@ const Contato = () => {
     })
       .then(() => alert("Success!"))
       .catch(error => alert(error));
-
+    setInputs({})
     e.preventDefault();
   };
 

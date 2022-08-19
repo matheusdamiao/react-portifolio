@@ -33,7 +33,7 @@ const Projetos = () => {
 
 
   return (
-    <div className='projetos'>
+    <div className='projetos' id='projetos'>
       
           {project.map( (project, index)=> {
           return <div>

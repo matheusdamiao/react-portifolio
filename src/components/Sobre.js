@@ -19,7 +19,7 @@ const Sobre = () => {
   return (
     <>
     
-    <h1 style={{ marginTop: '200px', marginBottom: '100px', fontSize: '40px', textAlign: 'center'}}> sobre mim </h1>
+    <h1 id='sobre' style={{ marginTop: '200px', marginBottom: '100px', fontSize: '40px', textAlign: 'center'}}> sobre mim </h1>
     
     <div className='sobre'>
       

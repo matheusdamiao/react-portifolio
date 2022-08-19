@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { db } from '../firebase/firebaseConfig'
 import { collection, addDoc} from "firebase/firestore"
 
@@ -13,21 +13,41 @@ const Contato = () => {
   }
 
 
-  const handleSubmit = e => {
-    
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "form", ...inputs })
-    })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error));
+  // const handleSubmit = e => {
+  //   e.preventDefault();
 
-      e.preventDefault();
-      setInputs( {[inputs.name] : [inputs.value]
-      })
-  };
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({ "form-name": "form", ...inputs })
+  //   })
+  //     .then(() => alert("Success!"))
+  //     .catch(error => alert(error));
 
+      
+  //     setInputs( {[inputs.name] : [inputs.value]})
+  // };
+
+
+  const handleSubmit = async (e) =>{
+   e.preventDefault();
+
+    try {
+      const response = await fetch("/", {
+             method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "form", ...inputs })
+          })
+          const formData = response.json();
+          console.log(formData)
+        }
+      catch (error) {
+        console.log(error)
+      }
+  }
+
+
+  
 
 
   // const handleSubmit = (e) =>{
@@ -75,7 +95,7 @@ const Contato = () => {
         <p> Preencha o formulário ou, se preferir, entre em contato comigo por meio de um dos links abaixo </p><br /><br />
       </div>
 
-      <form className='form' name='form' onSubmit={handleSubmit} netlify>
+      <form className='form' name='form' onSubmit={()=> handleSubmit} netlify="true">
         <input type="hidden" name="form-name" value="form" />
         <label> 
           <input type="text" placeholder='Nome' name='nome' value={inputs.nome || ''} onChange={updateInput}/>

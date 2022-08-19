@@ -22,7 +22,7 @@ const Menu = () => {
         setMenuState('closed')
       }}
     
-      window.addEventListener('resize', closeMenu)
+      // window.addEventListener('resize', closeMenu())
    
    return (
     // <div>

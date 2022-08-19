@@ -13,38 +13,38 @@ const Contato = () => {
   }
 
 
-  // const handleSubmit = e => {
-  //   e.preventDefault();
+  const handleSubmit = e => {
+    e.preventDefault();
 
-  //   fetch("/", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: encode({ "form-name": "form", ...inputs })
-  //   })
-  //     .then(() => alert("Success!"))
-  //     .catch(error => alert(error));
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "form", ...inputs })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
 
       
-  //     setInputs( {[inputs.name] : [inputs.value]})
-  // };
+      setInputs( {[inputs.name] : [inputs.value]})
+  };
 
 
-  const handleSubmit = async (e) =>{
-   e.preventDefault();
+  // const handleSubmit = async (e) =>{
+  //  e.preventDefault();
 
-    try {
-      const response = await fetch("/", {
-             method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "form", ...inputs })
-          })
-          const formData = response.json();
-          console.log(formData)
-        }
-      catch (error) {
-        console.log(error)
-      }
-  }
+  //   try {
+  //     const response = await fetch("/", {
+  //            method: "POST",
+  //           headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //           body: encode({ "form-name": "form", ...inputs })
+  //         })
+  //         const formData = response.json();
+  //         console.log(formData)
+  //       }
+  //     catch (error) {
+  //       console.log(error)
+  //     }
+  // }
 
 
   

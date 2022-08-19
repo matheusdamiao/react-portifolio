@@ -41,7 +41,7 @@ const Menu = () => {
        } 
        else {
         setMenuMobile(false)
-        setMenu(!menu)
+        setMenu(false)
        }
     })
 

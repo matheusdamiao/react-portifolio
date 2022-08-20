@@ -12,6 +12,7 @@
     "react": "^16.14.0",
     "react-awesome-reveal": "^3.8.1",
     "react-scripts": "5.0.1",
+    "react-useanimations": "^2.0.8",
     "sass": "^1.52.1",
     "web-vitals": "^2.1.4"
   },

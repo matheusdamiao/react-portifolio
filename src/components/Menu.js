@@ -3,8 +3,8 @@ import './style.scss'
 import { Link } from 'react-router-dom';
 import Bars from './assets/bars-solid.svg'
 import { Slide } from 'react-awesome-reveal'
-
-
+import UseAnimations from "react-useanimations";
+import menu2 from 'react-useanimations/lib/menu2'
 
 const Menu = () => {
   
@@ -16,18 +16,14 @@ const Menu = () => {
   let menuDiv
 
   if(menu){
-    menuDiv = 
-    
-    <ul className='list-menu' style={{listStyle: 'none', paddingTop: '50px', margin: '0', width: '40%', height:'100%', position: 'fixed', backgroundColor: 'rgba(0,0,0,0.8', top: '0', right: '0', zIndex: '50'}}>
-      <li><a href='#projetos'>projetos</a></li>
-      <li><a href='#sobre'>sobre</a></li>
-      <li><a href='#contato'>contato</a></li>
+    menuDiv =     
+     <ul className='list-menu' style={{listStyle: 'none', paddingTop: '100px', margin: '0', width: '25%', height:'100%', paddingLeft: '0', position: 'fixed', backgroundColor: 'rgba(0,0,0,0.8', top: '0', right: '0', zIndex: '50', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center'}}>
+      <li style={{margin: '20px'}}><a style={{color: 'white'}} href='#projetos'>projetos</a></li>
+      <li style={{margin: '20px'}}><a style={{color: 'white'}}href='#sobre'>sobre</a></li>
+      <li style={{margin: '20px'}}><a style={{color: 'white'}}href='#contato'>contato</a></li>
     </ul>
-    
-
-  
+          
   }
-
   
 
   useEffect(()=>{
@@ -42,61 +38,30 @@ const Menu = () => {
        else {
         setMenuMobile(false)
         setMenu(false)
+        
        }
     })
 
-    const divmenu = document.querySelector('.menuList-div');
-    window.addEventListener('click', (e)=>{
-  
-      const insideMenu = e.composedPath().includes(divmenu)
-      if(!insideMenu){
-        setMenu(false)
-      }
-    })
-  
-  
+    // const divmenu = document.querySelector('.menuList-div');
+
     
-  
-    // const divMenu = document.querySelector('.div-menu-mobile');
-
     // window.addEventListener('click', (e)=>{
-      
-    //   const insideDiv = e.composedPath().includes(divMenu)
-    //   if(!insideDiv) {
-    //     setClicked(false)
+  
+    //   const insideMenu = e.composedPath().includes(divmenu)
+    //   if(!insideMenu){
+    //     setMenu(false)
+    //     divmenu.dispatchEvent(new Event('click'));
+    //     setMenuAnimation(true)
     //   }
-
     // })
+  
+ 
 
   }
-  },[menuMobile],[menu])
+  },[menuMobile],[menu],)
 
 
  
-
-
-
-       
-  // const [menuState, setMenuState] = useState('closed');
-  
-
-  //   const toggleMenu = () => {
-  //     setMenuState('active')
-  //     if(menuState === 'active') {
-  //       setMenuState('closed') 
-  //     } 
-  //     }           
-
-  //   const closeMenu = () => {
-  //     if(window.innerWidth > 800){
-  //       setMenuState('closed')
-  //     }}
-    
-    
-   
-  //     useEffect( ()=>{
-  //       window.addEventListener('resize', closeMenu())
-  //     })
 
    return (
     // <div>
@@ -128,7 +93,7 @@ const Menu = () => {
     <div>
       <div className='menu-desktop'>
         <div className='logo-div'>
-          <p> LOGO</p>
+          <p> </p>
         </div>
         <ul>
           <li><a href='#projetos'>projetos</a></li>
@@ -139,10 +104,19 @@ const Menu = () => {
 
       <div className={menuMobile ? 'menu-mobile': 'menu-mobile-default' }>
         <div className='logo-div'>
-          <p> LOGO</p>
+          <p> </p>
         </div>
         <div className='menuList-div'>
-          <p onClick={()=> setMenu(!menu)}> MENU </p>
+            <UseAnimations
+            animation={menu2}
+            size={56}
+            style={{ padding: 100 }}
+            onClick={()=> setMenu(!menu)}
+            strokeColor='white'
+            speed={2}
+            
+          />
+          
         </div>
       </div>
 

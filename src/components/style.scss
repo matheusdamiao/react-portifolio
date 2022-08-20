@@ -151,6 +151,7 @@ body {
     color: white;
     position: fixed;
     top: 0;
+    z-index: 100000;
 
     @media screen and (min-width: 800px) {
         display: none;
@@ -167,8 +168,9 @@ body {
     }
    
     .menuList-div{
-        padding-right: 40px;
+        padding-right: 35px;
         cursor: pointer;
+        z-index: 99;
 
         p {
             color: white;
@@ -188,6 +190,8 @@ body {
   margin: 0;
   position: fixed;
   top: 0;
+  z-index: 10000;
+
 
   @media screen and (min-width: 800px) {
     display: none;
@@ -202,8 +206,9 @@ body {
 }
 
     .menuList-div{
-        padding-right: 40px;
+        padding-right: 35px;
         cursor: pointer;
+        z-index: 999999;
 
         p{
             color: white;
@@ -269,7 +274,7 @@ body {
 
 @keyframes animationMenu {
     0% {width: 10%; right:0}
-    100% {width: 40%; right:0}
+    100% {width: 25%; right:0}
 
 
 }

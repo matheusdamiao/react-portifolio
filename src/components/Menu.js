@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Bars from './assets/bars-solid.svg'
 import { Slide } from 'react-awesome-reveal'
 import UseAnimations from "react-useanimations";
-import menu2 from 'react-useanimations/lib/menu2'
+import menu from 'react-useanimations/lib/menu'
 
 const Menu = () => {
   
@@ -108,7 +108,7 @@ const Menu = () => {
         </div>
         <div className='menuList-div'>
             <UseAnimations
-            animation={menu2}
+            animation={menu}
             size={56}
             style={{ padding: 100 }}
             onClick={()=> setMenu(!menu)}

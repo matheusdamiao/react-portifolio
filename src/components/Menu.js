@@ -92,20 +92,27 @@ const Menu = () => {
 
     <div>
       <div className='menu-desktop'>
-        <div className='logo-div'>
-          <p> </p>
+        <Link to="/"><div className='logo-div'>
+          <p style={{fontSize: '30px', letterSpacing: '2px', fontFamily: 'Raleway'}}> MOD </p>
         </div>
+        </Link>
         <ul>
-          <li><a href='#projetos'>projetos</a></li>
+          <Link to="/sobre" style={{fontFamily: 'Raleway'}}> Sobre</Link>
+          <Link to="/projetos"  style={{fontFamily: 'Raleway'}}> Projetos </Link>
+          <Link to="/contato"  style={{fontFamily: 'Raleway'}}> Contato</Link>
+
+          
+          {/* <li><a href='#projetos'>projetos</a></li>
           <li><a href='#sobre'>sobre</a></li>
-          <li><a href='#contato'>contato</a></li>
+          <li><a href='#contato'>contato</a></li> */}
         </ul>
       </div>
 
       <div className={menuMobile ? 'menu-mobile': 'menu-mobile-default' }>
-        <div className='logo-div'>
-          <p> </p>
+        <Link to="/"><div className='logo-div'>
+          <p style={{fontSize: '30px', letterSpacing: '2px', fontFamily: 'Raleway'}}> MOD </p>
         </div>
+        </Link>
         <div className='menuList-div'>
             <UseAnimations
             animation={menu2}

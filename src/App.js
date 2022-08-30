@@ -18,11 +18,11 @@ function App() {
     <Menu />
     <Routes>
         <Route index path="/" element={<Main />} /> 
-        <Route path="projetos" element={<Projetos/>}/>
+        <Route path="/projetos" element={<Projetos/>}/>
         <Route path=":projeto" element={<ProjetoCompleto/> } /> 
         <Route path="projetos/:projeto" element={<ProjetoCompleto />}/>
-        <Route path="sobre" element={<Sobre />} />
-        <Route path="contato" element={<Contato />} />
+        <Route path="/sobre" element={<Sobre />} />
+        <Route path="/contato" element={<Contato />} />
         <Route path="*" element={<NotFound />} />
        
     </Routes>

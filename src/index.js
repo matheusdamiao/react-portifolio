@@ -18,7 +18,7 @@ const root = document.getElementById('root');
 render(
   
     <BrowserRouter>
-        <Menu />
+        {/* <Menu /> */}
           <Routes>
                 
                 <Route index path="/" element={<Main />} />

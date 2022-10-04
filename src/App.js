@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Menu />
+        {/* <Menu /> */}
           <Routes>
                 
                 <Route index path="/" element={<Main />} />

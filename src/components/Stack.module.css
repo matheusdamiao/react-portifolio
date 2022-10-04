@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.divMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.titulo {
+    font-family: 'Saira', sans-serif;
+    letter-spacing: 1%;
+    width: 100%;
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.titulo > h3 {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.titulo > span {
+    display: block;
+    background-color: #9BDE90;
+    height: 2px;
+    width: 280px;
+    text-align: center;
+    margin: 0px auto;
+
+}
+
+.titulo > h1 {
+    font-weight: 500;
+    color: #555555;
+    font-size: 50px;
+    text-align: center;
+}
+
+.titulo > p {
+    text-align: center;
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    padding-top: 20px;
+    line-height: 25px;
+    letter-spacing: 0.1px;
+    color: #707070;
+   
+}
+
+.icones {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.icones > div {
+    padding: 40px;
+    scroll-padding: 24px;
+    flex: 0 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.icones > div > img {
+    max-width: 80px;
+}
+
+.icones > div > p {
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: 'Saira', sans-serif;
+    font-weight: 200;
+    width: 100%;
+}
+
+
+.buttons {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+}
+
+
+.link:hover {
+    transform: scale(1.1);
+}
+
+.link:active {
+    box-shadow: none;
+    transform: translate(5px, 5px);
+
+}
+
+.link {
+    background: #9BDE90;
+    border: 2.7764px solid #000000;
+    box-shadow: 4.60987px 4.60987px 0px 1.84395px rgba(24, 24, 24, 0.8);
+    border-radius: 12.9076px;
+    height: 55px;
+    max-width: 200px;
+    width: 100%;
+    font-size: 18px;
+    align-self: flex-start;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Saira', sans-serif;
+    font-weight: 500;
+    color: black;
+    transition: 0.2s all ease-in-out;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .icones {
+        justify-content: space-around;
+    }
+    .icones > div {
+        padding: 20px;
+    }
+
+    .buttons {
+        
+        gap: 20px;
+    }
+
+    .link {
+        max-width: 150px;
+        font-size: 15px;
+    }
+
+    .link > img {
+        max-width: 30px;
+        max-height: 35px;
+    }
+}

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+.wrapper {
+     margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Saira', sans-serif;
+    gap: 50px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    max-width: 1150px;
+    width: 100%;
+    
+}
+
+.title > h3 {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: left;
+}
+
+.title > h1 {
+    font-weight: 500;
+    color: #555555;
+    font-size: 60px; 
+    text-align: left;
+}
+
+.title > span {
+    display: block;
+    background-color: #9BDE90;
+    height: 2px;
+    width: 280px;
+}
+
+
+.wrapperContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    /* max-width: 1350px; */
+    gap: 10px;
+    
+}
+
+
+.divTexto {
+    max-width: 800px;
+    /* padding-right: 50px; */
+}
+
+.divTexto > p {
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 45px;
+padding-left: 20px;
+}
+
+
+.divTexto > p > span{
+    font-weight: 600;
+}
+
+.divImagens {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.divImagens > img {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.divIcones{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+@media screen and (max-width: 900px) {
+    .title {
+        align-items: center;
+    }
+
+    .title > h1 {
+        line-height: 60px;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .wrapperContent {
+        flex-wrap: wrap-reverse;
+        gap: 80px;
+    }
+
+    .divImagens > img {
+        max-width: 300px;
+    }
+}
+
+

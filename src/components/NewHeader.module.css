@@ -81,8 +81,19 @@
     color: black;
     -webkit-transition: 2s;
     animation: buttonMove 2.5s infinite;
-    transition: all 2.5s;
+    transition: all 6ms;
     padding: 20px;
+}
+
+
+.link:hover {
+    transform: scale(1.1);
+}
+
+.link:active {
+    box-shadow: none;
+    transform: translate(5px, 5px);
+
 }
 
 

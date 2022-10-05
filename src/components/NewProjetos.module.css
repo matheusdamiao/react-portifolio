@@ -108,13 +108,13 @@
     font-weight: 300;
     font-size: 16px;
     padding-top: 50px;
-    line-height: 25px;
+    line-height: 30px;
     letter-spacing: 0.1px;
     color: #707070;
-    max-width: 80%;
+    max-width: 90%;
 }
 
-.projeto1texto > button {
+.projeto1texto > a {
     background: #9BDE90;
     border: 2.7764px solid #000000;
     box-shadow: 4.60987px 4.60987px 0px 1.84395px rgba(24, 24, 24, 0.8);
@@ -134,11 +134,11 @@
     transition: 0.2s all ease-in-out;
 }
 
-.projeto1texto > button:hover {
+.projeto1texto > a:hover {
     transform: scale(1.1);
 }
 
-.projeto1texto > button:active {
+.projeto1texto > a:active {
     box-shadow: none;
     transform: translate(5px, 5px);
 
@@ -223,7 +223,7 @@
     max-width: 80%;
 }
 
-.projeto2texto > button {
+.projeto2texto > a {
     background: #9BDE90;
     border: 2.7764px solid #000000;
     box-shadow: 4.60987px 4.60987px 0px 1.84395px rgba(24, 24, 24, 0.8);
@@ -243,11 +243,11 @@
     transition: 0.2s all ease-in-out;
 }
 
-.projeto2texto > button:hover {
+.projeto2texto > a:hover {
     transform: scale(1.1);
 }
 
-.projeto2texto > button:active {
+.projeto2texto > a:active {
     box-shadow: none;
     transform: translate(5px, 5px);
 

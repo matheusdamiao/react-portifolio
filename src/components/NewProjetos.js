@@ -2,8 +2,12 @@ import React, { useEffect, useState } from 'react'
 import style from "./NewProjetos.module.css"
 import imagem1 from './assets/projeto-1-desktop.png';
 import imagem1mobile from './assets/projeto-1-mobile.png'
+import imagem1mobileSVG from './assets/projeto-1-mobile-svg.svg'
+
 import imagem2 from './assets/projeto-2-desktop.png'
 import imagem2mobile from './assets/projeto-2-mobile.png'
+import imagem2mobileSVG from './assets/projeto-2-mobile-svg.svg'
+
 
 const NewProjetos = () => {
 
@@ -32,7 +36,7 @@ const NewProjetos = () => {
 
         <div className={style.projeto1}>
             <div className={style.imagem}>
-                <img src={isMobile ? imagem1mobile : imagem1} alt=''/>
+                <img src={isMobile ? imagem1mobileSVG : imagem1} alt=''/>
             </div>
 
             <div className={style.projeto1texto}>
@@ -47,7 +51,7 @@ const NewProjetos = () => {
 
         <div className={style.projeto2}>
             <div className={style.imagem}>
-                 <img src={isMobile ? imagem2mobile: imagem2} alt=''/>
+                 <img src={isMobile ? imagem2mobileSVG: imagem2} alt=''/>
             </div>
             
             <div className={style.projeto2texto}>

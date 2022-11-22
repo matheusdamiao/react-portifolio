@@ -173,6 +173,10 @@
 
 }
 
+
+
+
+
 .projeto2texto {
     flex-grow: 0;
     flex-shrink: 2;
@@ -344,4 +348,27 @@
         padding-top: 10px;
     }
 
+
+
+    .imagemMobile {
+        display: block;
+    }
+    
+    .imagemDesktop {
+        display: none;
+       
+    }
+
+}
+
+
+
+@media screen and (min-width: 800px) {
+    .imagemDesktop{
+        display: block;
+    }
+
+    .imagemMobile {
+        display: none;
+    }
 }
